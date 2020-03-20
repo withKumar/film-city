@@ -10,11 +10,15 @@ const route = require('./routes/indexRoute');
 
 // Database connection
 const DBUrl = "mongodb+srv://lib123:lib123@book-duqur.mongodb.net/test?retryWrites=true&w=majority";
+
+// Database options
 const dbOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     dbName : 'film_city',
 }
+
+//Database connection establishment using CONNECT
 mongoose.connect(DBUrl,dbOptions)
     .then(db => console.log('DB Connected ' + db))
     .catch(err => console.log(err));
