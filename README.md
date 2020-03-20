@@ -1,3 +1,3 @@
-# film-city
+# Film-City
 
-# a server service compaitable with react or any backend service
+# A server service compaitable with react or any backend service
